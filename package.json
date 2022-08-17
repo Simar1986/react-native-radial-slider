@@ -1,18 +1,18 @@
 {
   "name": "react-native-radial-slider",
-  "version": "0.0.4",
+  "version": "0.0.1",
   "description": "React Native component to select or highlight a specific value from a range of values",
-  "homepage": "https://github.com/SimformSolutionsPvtLtd/react-native-radial-slider#readme",
+  "homepage": "https://github.com/Simar1986/react-native-radial-slider#readme",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
-  "author": "Simform Solutions",
+  "author": "Simar1986",
   "license": "MIT",
   "files": [
     "lib"
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/SimformSolutionsPvtLtd/react-native-radial-slider"
+    "url": "https://github.com/Simar1986/react-native-radial-slider"
   },
   "keywords": [
     "react",

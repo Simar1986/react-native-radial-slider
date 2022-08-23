@@ -30,6 +30,9 @@ export type CenterContentProps = {
   value?: number;
   centerContentStyle?: StyleProp<ViewStyle>;
   unitValueContentStyle?: StyleProp<ViewStyle>;
+  icon1?: any;
+  icon2?: any;
+  icon3?: any;
 };
 
 export type LineContentProps = {
@@ -293,6 +296,7 @@ export type RadialSliderProps = {
    * Color for icon
    */
   stroke?: string;
+  
 };
 
 export interface ButtonProps {

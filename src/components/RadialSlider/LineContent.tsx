@@ -3,7 +3,7 @@ import React, { useState, useEffect } from 'react';
 import type { LineContentProps } from './types';
 import { G, Line } from 'react-native-svg';
 import { useRadialSlider } from './hooks';
-import { Colors } from '../../theme';
+// import { Colors } from '../../theme';
 
 const LineContent = (props: LineContentProps) => {
   const [markerPositionValues, setMarkerPositionValues] = useState([]);
@@ -12,7 +12,7 @@ const LineContent = (props: LineContentProps) => {
     linearGradient = [],
     thumbBorderWidth = 5,
     markerLineSize = 50,
-    lineColor = Colors.grey,
+    // lineColor = Colors.grey,
     lineSpace = 3,
     min = 0,
     max = 100,
@@ -108,7 +108,7 @@ const LineContent = (props: LineContentProps) => {
                       ? Platform.OS === 'web'
                         ? linearGradient[0].color
                         : 'url(#gradient)'
-                      : lineColor
+                      : "#E67473"
                   }
                   fill="none"
                   strokeLinecap="round"

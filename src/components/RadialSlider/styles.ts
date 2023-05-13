@@ -49,7 +49,7 @@ export const styles = StyleSheet.create({
     alignItems: 'center',
   },
   large_header: {
-    color: Colors.darkBlue,
+    color: Colors.lightBlue,
     fontWeight: '600',
     fontSize: moderateScale(27),
   },
@@ -59,7 +59,7 @@ export const styles = StyleSheet.create({
     justifyContent: 'center',
   },
   helperText: {
-    color: Colors.darkCharcoal,
+    color: Colors.lightBlue,
     fontWeight: '400',
     fontSize: moderateScale(14),
   },

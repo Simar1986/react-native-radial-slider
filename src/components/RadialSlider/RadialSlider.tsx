@@ -7,8 +7,7 @@ import Svg, {
   Circle,
   Color,
   NumberProp,
-  Text
-  
+  Text,
 } from 'react-native-svg';
 import { View, Platform, StyleSheet } from 'react-native';
 import type { RadialSliderProps } from './types';
@@ -50,7 +49,7 @@ const RadialSlider = (props: RadialSliderProps & typeof defaultProps) => {
     leftIconStyle,
     rightIconStyle,
     stroke,
-    
+
     onChange = () => {},
   } = props;
 
@@ -154,7 +153,7 @@ const RadialSlider = (props: RadialSliderProps & typeof defaultProps) => {
                 },
                 index: React.Key | null | undefined
               ) => (
-                <Stop key={index} offset={item.offset} stopColor="#87E3FC" />
+                <Stop key={index} offset={item.offset} stopColor="#E67473" /> //earlier color "#87E3FC"
               )
             )}
           </LinearGradient>
@@ -168,36 +167,35 @@ const RadialSlider = (props: RadialSliderProps & typeof defaultProps) => {
               stroke={sliderTrackColor}
               fill="none"
               strokeLinecap={strokeLinecap}
-              d={`M${startPoint.x},${startPoint.y} A ${radius},${radius},0,${startRadian - radianValue >= Math.PI ? '1' : '0'
-                },1,${endPoint.x},${endPoint.y}`}
+              d={`M${startPoint.x},${startPoint.y} A ${radius},${radius},0,${
+                startRadian - radianValue >= Math.PI ? '1' : '0'
+              },1,${endPoint.x},${endPoint.y}`}
             />
             <Path
               strokeWidth={sliderWidth}
               stroke="url(#gradient)"
               fill="none"
               strokeLinecap={strokeLinecap}
-              d={`M${startPoint.x},${startPoint.y} A ${radius},${radius},0,${startRadian - currentRadian >= Math.PI ? '1' : '0'
-                },1,${curPoint.x},${curPoint.y}`}
+              d={`M${startPoint.x},${startPoint.y} A ${radius},${radius},0,${
+                startRadian - currentRadian >= Math.PI ? '1' : '0'
+              },1,${curPoint.x},${curPoint.y}`}
             />
             <Circle
               cx={curPoint.x + circleXPosition}
               cy={curPoint.y}
               r={24}
               fill="#0D1736"
-              stroke='#4FC3F7'
+              stroke="#4FC3F7"
               strokeWidth={2}
               {...panResponder.panHandlers}
-            >
-
-            </Circle>
+            />
             <Text
               x={curPoint.x}
               y={curPoint.y + 5}
               fontSize="15"
               fontWeight="bold"
               fill="#29B6F6"
-              textAnchor="middle"
-            >
+              textAnchor="middle">
               {value}
             </Text>
           </>

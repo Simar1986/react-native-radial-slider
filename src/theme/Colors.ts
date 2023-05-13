@@ -7,6 +7,7 @@ const colors = {
   red: '#EA4800',
   darkBlue: '#0B3471',
   skyBlue: '#0F91E3',
+  lightBlue: '#29B6F6',
 };
 
 export default colors;

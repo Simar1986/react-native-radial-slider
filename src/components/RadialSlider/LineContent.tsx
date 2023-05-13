@@ -108,7 +108,7 @@ const LineContent = (props: LineContentProps) => {
                       ? Platform.OS === 'web'
                         ? linearGradient[0].color
                         : 'url(#gradient)'
-                      : "#E67473"
+                      : '#4FC3F7'
                   }
                   fill="none"
                   strokeLinecap="round"
